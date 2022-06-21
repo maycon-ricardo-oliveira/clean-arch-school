@@ -1,0 +1,7 @@
+{
+  "autload": {
+    "psr-4": {
+      "School\\": "src/"
+    }
+  }
+}
