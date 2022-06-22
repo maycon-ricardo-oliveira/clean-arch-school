@@ -1,7 +1,15 @@
 {
   "autload": {
     "psr-4": {
-      "School\\": "src/"
+      "Arch\\School\\": "src/"
     }
+  },
+  "autload-dev": {
+    "psr-4": {
+      "Arch\\School\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.1"
   }
 }

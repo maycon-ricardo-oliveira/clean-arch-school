@@ -1,6 +1,6 @@
 <?php
 
-namespace School;
+namespace Arch\School;
 
 class Cpf
 {
