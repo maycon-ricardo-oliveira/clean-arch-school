@@ -1,6 +1,6 @@
 <?php
 
-namespace Arch\School;
+namespace Arch\School\Student;
 
 class Phone
 {
@@ -16,7 +16,7 @@ class Phone
     private function setDdd(string $ddd): void
     {
         if (preg_match('/\d{2}/', $ddd) !== 1) {
-            throw new \InvalidArgumentException('DDD inválid');
+            throw new \InvalidArgumentException('DDD is invalid');
         }
 
         $this->ddd = $ddd;

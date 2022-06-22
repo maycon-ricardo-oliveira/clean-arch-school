@@ -1,6 +1,9 @@
 <?php
 
-namespace Arch\School;
+namespace Arch\School\Student;
+
+use Arch\School\Cpf;
+use Arch\School\Email;
 
 class Student
 {
