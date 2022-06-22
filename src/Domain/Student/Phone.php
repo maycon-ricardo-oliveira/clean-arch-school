@@ -1,6 +1,6 @@
 <?php
 
-namespace Arch\School\Student;
+namespace Arch\School\Domain\Student;
 
 class Phone
 {

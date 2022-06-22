@@ -1,6 +1,6 @@
 <?php
 
-namespace Arch\School;
+namespace Arch\School\Domain;
 
 
 class Email

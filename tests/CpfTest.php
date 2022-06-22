@@ -3,7 +3,7 @@
 
 namespace Arch\School\Tests;
 
-use Arch\School\Cpf;
+use Arch\School\Domain\Cpf;
 use PHPUnit\Framework\TestCase;
 
 class CpfTest extends TestCase

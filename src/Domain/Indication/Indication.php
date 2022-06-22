@@ -1,8 +1,8 @@
 <?php
 
-namespace Arch\School\Indication;
+namespace Arch\School\Domain\Indication;
 
-use Arch\School\Student\Student;
+use Arch\School\Domain\Student\Student;
 
 class Indication
 {
