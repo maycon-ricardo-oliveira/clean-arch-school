@@ -11,7 +11,7 @@ class Student
     private array $phones;
 
 
-    public function __construct(string $name, Cpf $cpf, Email $email, array $phones)
+    public function __construct(string $name, Cpf $cpf, Email $email, array $phones = [])
     {
         $this->name = $name;
         $this->cpf = $cpf;
