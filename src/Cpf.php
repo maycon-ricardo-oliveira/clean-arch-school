@@ -20,7 +20,7 @@ class Cpf
         ];
 
         if (filter_var($cpfNumber, FILTER_VALIDATE_REGEXP, $options) === false) {
-            throw new \InvalidArgumentException('CPF number is invalid');
+            throw new \InvalidArgumentException('Format CPF number is invalid');
         }
 
         $this->cpfNumber = $cpfNumber;
