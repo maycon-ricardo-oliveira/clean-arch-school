@@ -6,7 +6,7 @@ class Student
 {
 
     private string $name;
-    private string $cpf;
+    private Cpf $cpf;
     private Email $email;
 
 }
