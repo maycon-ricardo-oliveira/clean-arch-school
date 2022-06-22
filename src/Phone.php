@@ -10,22 +10,22 @@ class Phone
     public function __construct(string $ddd, string $number)
     {
         $this->setDdd($ddd);
-        $this->setNumero($number);
+        $this->setNumber($number);
     }
 
     private function setDdd(string $ddd): void
     {
         if (preg_match('/\d{2}/', $ddd) !== 1) {
-            throw new \InvalidArgumentException('DDD inválido');
+            throw new \InvalidArgumentException('DDD inválid');
         }
 
         $this->ddd = $ddd;
     }
 
-    private function setNumero(string $number): void
+    private function setNumber(string $number): void
     {
         if (preg_match('/\d{8,9}/', $number) !== 1) {
-            throw new \InvalidArgumentException('Número de telefone inválido');
+            throw new \InvalidArgumentException('Phone number is invalid');
         }
 
         $this->number = $number;

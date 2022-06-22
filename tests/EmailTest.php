@@ -7,15 +7,15 @@ use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase
 {
-    public function testEmailNoFormatoInvalidoNaoDevePoderExistir()
+    public function testEmailInInvalidFormatMustNotBeAbleToExist()
     {
         $this->expectException(\InvalidArgumentException::class);
-        new Email('email inválido');
+        new Email('Email is Invalid');
     }
 
-    public function testEmailDevePoderSerRepresentadoComoString()
+    public function testEmailMustBeAbleToBeRepresentedAsAString()
     {
-        $email = new Email('endereco@example.com');
-        $this->assertSame('endereco@example.com', (string) $email);
+        $email = new Email('example@example.com');
+        $this->assertSame('example@example.com', (string) $email);
     }
 }

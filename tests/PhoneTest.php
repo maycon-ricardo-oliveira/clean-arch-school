@@ -7,20 +7,20 @@ use PHPUnit\Framework\TestCase;
 
 class PhoneTest extends TestCase
 {
-    public function testTelefoneDevePoderSerRepresentadoComoString()
+    public function testPhoneMustBeAbleToBeRepresentedAsString()
     {
         $phone = new Phone('24', '22222222');
         $this->assertSame('(24) 22222222', (string) $phone);
     }
 
-    public function testTelefoneComDddInvalidoNaoDeveExistir()
+    public function testPhoneWithInvalidMustNotExist()
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectDeprecationMessage('DDD inválido');
         new Phone('ddd', '22222222');
     }
 
-    public function testTelefoneComNumeroInvalidoNaoDeveExistir()
+    public function testPhoneWithInvalidNumberMustNotExist()
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectDeprecationMessage('Número de telefone inválido');

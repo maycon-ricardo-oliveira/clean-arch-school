@@ -14,7 +14,7 @@ class CpfTest extends TestCase
         new Cpf('12345678910');
     }
 
-    public function testCpfNumberSholdBeConvertToString()
+    public function testCpfMustBeAbleToBeRepresentedAsString()
     {
         $cpf = new Cpf('123.456.789-10');
         $this->assertSame('123.456.789-10', (string) $cpf);
