@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Alura\School\Tests;
+namespace Arch\School\Tests;
 
-use Alura\School\Cpf;
+use Arch\School\Cpf;
 use PHPUnit\Framework\TestCase;
 
 class CpfTest extends TestCase
@@ -17,7 +17,7 @@ class CpfTest extends TestCase
     public function testCpfNumberSholdBeConvertToString()
     {
         $cpf = new Cpf('123.456.789-10');
-    $this->assertSame('123.456.789-10', (string) $cpf);
+        $this->assertSame('123.456.789-10', (string) $cpf);
     }
 
 }

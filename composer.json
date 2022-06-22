@@ -1,10 +1,10 @@
 {
-  "autload": {
+  "autoload": {
     "psr-4": {
       "Arch\\School\\": "src/"
     }
   },
-  "autload-dev": {
+  "autoload-dev": {
     "psr-4": {
       "Arch\\School\\Tests\\": "tests/"
     }
