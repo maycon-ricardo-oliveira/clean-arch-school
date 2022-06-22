@@ -10,6 +10,10 @@ class Student
     private Email $email;
     private array $phones;
 
+    public static function withCpfNameEmail(string $cpf, string $name, string $mail):self
+    {
+        return new Student($name, new Cpf($cpf), new Email($mail));
+    }
 
     public function __construct(string $name, Cpf $cpf, Email $email, array $phones = [])
     {
@@ -22,7 +26,7 @@ class Student
     public function addPhone(string $ddd, string $number)
     {
         $this->phones[] = new Phone($ddd, $number);
-
+        return $this;
     }
 
 }
