@@ -16,14 +16,14 @@ class PhoneTest extends TestCase
     public function testPhoneWithInvalidMustNotExist()
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectDeprecationMessage('DDD inválido');
+        $this->expectDeprecationMessage('DDD is invalid');
         new Phone('ddd', '22222222');
     }
 
     public function testPhoneWithInvalidNumberMustNotExist()
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectDeprecationMessage('Número de telefone inválido');
+        $this->expectDeprecationMessage('Phone number is invalid');
         new Phone('24', 'número');
     }
 }
