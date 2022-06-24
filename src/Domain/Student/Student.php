@@ -12,7 +12,7 @@ class Student
     private Email $email;
     private array $phones;
 
-    public static function withCpfNameEmail(string $cpf, string $name, string $mail):self
+    public static function withCpfNameEmail(string $cpf, string $name, string $mail): self
     {
         return new Student($name, new Cpf($cpf), new Email($mail));
     }
@@ -29,6 +29,26 @@ class Student
     {
         $this->phones[] = new Phone($ddd, $number);
         return $this;
+    }
+
+    public function cpf(): string
+    {
+        return $this->cpf();
+    }
+
+    public function name(): string
+    {
+        return $this->name;
+    }
+
+    public function email(): string
+    {
+        return $this->email;
+    }
+
+    public function phones(): array
+    {
+        return $this->phones;
     }
 
 }

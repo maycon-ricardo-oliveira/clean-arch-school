@@ -4,6 +4,21 @@ namespace Arch\School\Domain\Student;
 
 class Phone
 {
+    /**
+     * @return string
+     */
+    public function ddd(): string
+    {
+        return $this->ddd;
+    }
+
+    /**
+     * @return string
+     */
+    public function number(): string
+    {
+        return $this->number;
+    }
     private string $ddd;
     private string $number;
 
