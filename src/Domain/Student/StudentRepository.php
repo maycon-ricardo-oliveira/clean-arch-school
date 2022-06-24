@@ -9,7 +9,7 @@ interface StudentRepository
 
     public function add(Student $student): void;
 
-    public function getByCpf(Cpf $cpf): Student;
+    public function findByCpf(Cpf $cpf): Student;
 
     /** @return Student[] */
     public function getAll(): array;
