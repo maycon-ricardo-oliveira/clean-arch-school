@@ -4,6 +4,7 @@ namespace Arch\School\Domain\Student;
 
 use Arch\School\Domain\Cpf;
 use Arch\School\Domain\Email;
+use Arch\School\Domain\Password;
 
 class Student
 {
@@ -11,6 +12,8 @@ class Student
     private Cpf $cpf;
     private Email $email;
     private array $phones;
+    private Password $password;
+
 
     public static function withCpfNameEmail(string $cpf, string $name, string $mail): self
     {
