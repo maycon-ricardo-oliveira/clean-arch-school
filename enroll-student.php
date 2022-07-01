@@ -11,8 +11,5 @@ $cpf = $argv[3];
 $ddd = $argv[4];
 $phone = $argv[5];
 
-$student = Student::withCpfNameEmail($cpf, $name, $email)->addPhone($ddd, $phone);
 
-$repository = new StudentRepositoryInMemory();
-$repository->add($student);
 
