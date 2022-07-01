@@ -1,6 +1,6 @@
 <?php
 
-namespace Arch\School\Tests;
+namespace Arch\School\Tests\Domain;
 
 use Arch\School\Domain\Email;
 use PHPUnit\Framework\TestCase;

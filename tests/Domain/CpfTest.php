@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Arch\School\Tests;
+namespace Arch\School\Tests\Domain;
 
 use Arch\School\Domain\Cpf;
 use PHPUnit\Framework\TestCase;
