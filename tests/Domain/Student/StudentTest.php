@@ -2,22 +2,46 @@
 
 namespace Arch\School\Tests\Domain\Student;
 
+use Arch\School\Domain\Cpf;
+use Arch\School\Domain\Email;
 use Arch\School\Domain\Student\Phone;
+use Arch\School\Domain\Student\Student;
 use PHPUnit\Framework\TestCase;
 
 class StudentTest extends TestCase
 {
 
+    public Student $student;
 
-    public function testStudentWithThreePHonesMustBeNotExist()
+    public function setUp(): void
     {
-        $phone1 = new Phone('24', '22222221');
-        $phone2 = new Phone('24', '22222222');
-        $phone3 = new Phone('24', '22222223');
+        $this->student = new Student(
+            'Maycon',
+            $this->createStub(Cpf::class),
+            $this->createStub(Email::class),
+        );
+    }
 
-        $this->expectException(\InvalidArgumentException::class);
-        $this->expectDeprecationMessage('Phone number is invalid');
-        new Phone('24', 'número');
+    public function testStudentWithTwoMorePhonesMustBeExcepction()
+    {
+        $this->expectException(\DomainException::class);
+
+        $this->student->addPhone('24', '22222221');
+        $this->student->addPhone('24', '22222222');
+        $this->student->addPhone('24', '22222223');
+    }
+
+    public function testAddOnePhoneMustBeWork()
+    {
+        $this->student->addPhone('24', '22222221');
+        $this->assertCount(1, $this->student->phones());
+    }
+
+    public function testAddTwoPhoneMustBeWork()
+    {
+        $this->student->addPhone('24', '22222221');
+        $this->student->addPhone('24', '22222222');
+        $this->assertCount(2, $this->student->phones());
     }
 
 }
