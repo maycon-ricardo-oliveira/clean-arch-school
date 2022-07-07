@@ -30,6 +30,10 @@ class Student
 
     public function addPhone(string $ddd, string $number)
     {
+        if (count($this->phones) === 2) {
+            throw new \DomainException('Is not possible create more with two phones');
+        }
+
         $this->phones[] = new Phone($ddd, $number);
         return $this;
     }
