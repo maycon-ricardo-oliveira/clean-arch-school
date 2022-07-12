@@ -2,10 +2,9 @@
 
 namespace Arch\School\Tests\Domain\Student;
 
-use Arch\School\Domain\Cpf;
-use Arch\School\Domain\Email;
-use Arch\School\Domain\Student\Phone;
-use Arch\School\Domain\Student\Student;
+use Arch\School\Academic\Domain\Cpf;
+use Arch\School\Academic\Domain\Email;
+use Arch\School\Academic\Domain\Student\Student;
 use PHPUnit\Framework\TestCase;
 
 class StudentTest extends TestCase

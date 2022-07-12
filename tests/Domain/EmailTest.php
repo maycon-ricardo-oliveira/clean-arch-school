@@ -2,7 +2,7 @@
 
 namespace Arch\School\Tests\Domain;
 
-use Arch\School\Domain\Email;
+use Arch\School\Academic\Domain\Email;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase

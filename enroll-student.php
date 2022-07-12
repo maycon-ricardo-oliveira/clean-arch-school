@@ -1,11 +1,11 @@
 <?php
 
-use Arch\School\App\Student\EnrollStudent\EnrollStudent;
-use Arch\School\App\Student\EnrollStudent\EnrollStudentDto;
-use Arch\School\Domain\EventPubllisher;
-use Arch\School\Domain\Student\Student;
-use Arch\School\Domain\Student\StudentEnrolledLog;
-use Arch\School\Infra\Student\StudentRepositoryInMemory;
+use Arch\School\Academic\App\Student\EnrollStudent\EnrollStudent;
+use Arch\School\Academic\App\Student\EnrollStudent\EnrollStudentDto;
+use Arch\School\Academic\Domain\EventPubllisher;
+use Arch\School\Academic\Domain\Student\Student;
+use Arch\School\Academic\Domain\Student\StudentEnrolledLog;
+use Arch\School\Academic\Infra\Student\StudentRepositoryInMemory;
 
 require 'vendor/autoload.php';
 

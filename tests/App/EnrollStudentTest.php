@@ -2,11 +2,10 @@
 
 namespace Arch\School\Tests\App;
 
-use Arch\School\App\Student\EnrollStudent\EnrollStudent;
-use Arch\School\App\Student\EnrollStudent\EnrollStudentDto;
-use Arch\School\Domain\Cpf;
-use Arch\School\Domain\Student\Student;
-use Arch\School\Infra\Student\StudentRepositoryInMemory;
+use Arch\School\Academic\App\Student\EnrollStudent\EnrollStudent;
+use Arch\School\Academic\App\Student\EnrollStudent\EnrollStudentDto;
+use Arch\School\Academic\Domain\Cpf;
+use Arch\School\Academic\Infra\Student\StudentRepositoryInMemory;
 use PHPUnit\Framework\TestCase;
 
 class EnrollStudentTest extends TestCase

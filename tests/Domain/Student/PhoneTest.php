@@ -2,7 +2,7 @@
 
 namespace Arch\School\Tests\Domain\Student;
 
-use Arch\School\Domain\Student\Phone;
+use Arch\School\Academic\Domain\Student\Phone;
 use PHPUnit\Framework\TestCase;
 
 class PhoneTest extends TestCase
