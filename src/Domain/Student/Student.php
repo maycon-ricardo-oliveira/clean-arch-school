@@ -38,7 +38,7 @@ class Student
         return $this;
     }
 
-    public function cpf(): string
+    public function cpf(): Cpf
     {
         return $this->cpf;
     }
